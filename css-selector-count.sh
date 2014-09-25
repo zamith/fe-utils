@@ -14,5 +14,5 @@ NO_SELECTORS=$(($NO_RULES + $(cat $1 | grep -o ',' | wc -l)))
 echo "Number of rules: $(echo $NO_RULES | tr -d '')"
 echo "Number of selectors: $(echo $NO_SELECTORS | tr -d '')"
 if [ "$NO_SELECTORS" -gt "4095" ]; then
-    echo -e "\033[0;31mThis execedes IE limit!\033[0m"
+    echo -e "\033[0;31mThis excedes IE limit!\033[0m"
 fi
